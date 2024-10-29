@@ -1,0 +1,12 @@
+.container {
+  position: sticky;
+  display: flex;
+  overflow: hidden;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 1rem;
+  background-color: var(--theme-color4-hex);
+  /* scroll-snap-type: y mandatory; */
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  overflow: hidden;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  color: var(--theme-color2-rgba);
+  /* scroll-snap-type: y mandatory; */
+}
+
+.active {
+  /* color: var(--theme-color6-rgba); */
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--theme-color6-rgba);
+}

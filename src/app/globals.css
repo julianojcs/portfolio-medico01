@@ -1,0 +1,81 @@
+:root {
+  --background: #fefefe;
+  --foreground: #333333;
+
+  /* Color Theme Swatches in Hex */
+  --theme-color0-hex: #F0F0F2;
+  --theme-color1-hex: #2D4B73;
+  --theme-color2-hex: #253C59;
+  --theme-color3-hex: #99B4BF;
+  --theme-color4-hex: #D9B70D;
+  --theme-color5-hex: #BF8D30;
+  --theme-color6-hex: #D92B04;
+
+  /* Color Theme Swatches in RGBA */
+  --theme-color0-rgba: rgba(240, 239, 242, 1);
+  --theme-color1-rgba: rgba(44, 75, 114, 1);
+  --theme-color2-rgba: rgba(37, 59, 89, 1);
+  --theme-color3-rgba: rgba(153, 180, 191, 1);
+  --theme-color4-rgba: rgba(216, 182, 13, 1);
+  --theme-color5-rgba: rgba(191, 141, 47, 1);
+  --theme-color6-rgba: rgba(216, 43, 4, 1);
+
+  /* Color Theme Swatches in HSLA */
+  --theme-color0-hsla: hsla(247, 8, 94, 1);
+  --theme-color1-hsla: hsla(213, 43, 31, 1);
+  --theme-color2-hsla: hsla(213, 40, 24, 1);
+  --theme-color3-hsla: hsla(196, 23, 67, 1);
+  --theme-color4-hsla: hsla(50, 88, 45, 1);
+  --theme-color5-hsla: hsla(39, 60, 46, 1);
+  --theme-color6-hsla: hsla(11, 96, 43, 1);
+
+  --font-size-title: clamp(2rem, 5vw + .5rem, 3rem);
+  --font-size-p: clamp(1rem, 5vw + .5rem, 1.5rem);
+  --logo-bg-color: rgb(40, 60, 99);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  width: min(1200px, 100% - 4rem);
+  margin-inline: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* outline: 3px solid red; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* section {
+  height: 100vh;
+  scroll-snap-align: end;
+} */
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

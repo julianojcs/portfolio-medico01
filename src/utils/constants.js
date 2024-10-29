@@ -1,0 +1,22 @@
+export const menuItems = [
+  {
+    title: 'Exames',
+    url: '/exams',
+  },
+  {
+    title: 'Clinica',
+    url: '/clinic',
+  },
+  {
+    title: 'Cursos',
+    url: '/curses',
+  },
+  {
+    title: 'Contato',
+    url: '/contact',
+  },
+  {
+    title: 'Sobre',
+    url: '/about',
+  },
+];
