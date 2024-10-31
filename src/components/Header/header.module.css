@@ -2,7 +2,7 @@
   position: sticky;
   display: flex;
   overflow: hidden;
-  height: 50px;
+  height: 90px;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
