@@ -1,5 +1,7 @@
 .container {
   position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   overflow: hidden;
   height: 90px;
@@ -8,5 +10,6 @@
   gap: 1rem;
   padding-inline: 1rem;
   background-color: var(--theme-color4-hex);
+  box-shadow: 0 2px 5px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.3);
   /* scroll-snap-type: y mandatory; */
 }
