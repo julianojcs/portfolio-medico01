@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   font-family: "Open Sans", sans-serif;
 
@@ -23,7 +23,6 @@
     word-break: break-word;
     gap: 1rem;
     font-size: .8rem;
-    text-align: justify;
     margin-inline: auto;
 
     & .intro {
@@ -42,12 +41,21 @@
         font-weight: bold;
       }
     }
-
-    & .description {
+    & .content {
+      text-align: justify;
+      vertical-align: baseline;
+      color: var(--theme-color1-rgba);
       display: inherit;
       gap: 1rem;
-      color: var(--theme-color1-rgba);
-      vertical-align: baseline;
+
+      & .description {
+        gap: 1rem;
+        display: inherit;
+      }
+
+      & .fellow {
+        margin-left: 2rem;
+      }
     }
   }
 }
