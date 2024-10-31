@@ -8,15 +8,17 @@ export const Menu = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.container}>
+    <>
       {menuItems != null &&
-      menuItems.map((item) => (
-        <Link
-          key={item.title}
-          href={item.url}
-          className={`${pathname === item.url && styles.active}`}
-        >{item.title}</Link>
-      ))}
-    </nav>
+        menuItems.map((item) => (
+          <Link
+            key={item.title}
+            href={item.url}
+            className={`${styles.item} ${pathname === item.url && styles.active}`}
+          >
+            {item.title}
+          </Link>
+        ))}
+    </>
   );
 };

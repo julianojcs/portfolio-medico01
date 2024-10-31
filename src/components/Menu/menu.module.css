@@ -1,24 +1,12 @@
-.container {
-  display: flex;
-  overflow: hidden;
-  height: 50px;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-  margin-left: auto;
-  color: var(--theme-color1-rgba);
-  /* scroll-snap-type: y mandatory; */
-
-  & a {
-    padding-inline: 0.5rem;
-    &:hover {
-      color: var(--theme-color2-rgba);
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-decoration-color: var(--theme-color6-rgba);
-      filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
-      transition: color 0.3s ease, filter 0.3s ease;
-    }
+.item {
+  padding-inline: 0.5rem;
+  &:hover {
+    color: var(--theme-color2-rgba);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--theme-color6-rgba);
+    filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+    transition: color 0.3s ease, filter 0.3s ease;
   }
 }
 

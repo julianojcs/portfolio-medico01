@@ -1,9 +1,8 @@
 .container {
   position: sticky;
+  display: flex;
   top: 0;
   z-index: 1000;
-  display: flex;
-  overflow: hidden;
   height: 90px;
   flex-direction: row;
   align-items: center;
@@ -12,4 +11,69 @@
   background-color: var(--theme-color4-hex);
   box-shadow: 0 2px 5px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.3);
   /* scroll-snap-type: y mandatory; */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  color: var(--theme-color1-rgba);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--theme-color1-hex);
+  margin: 4px 0;
+}
+
+@media (max-width: 830px) {
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    top: 100%;
+    right: 0;
+    width: 100svw;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+    background-color: var(--theme-color3-hex);
+  }
+
+  & a:first-child {
+    margin-top: .5rem;
+  }
+  & a:last-child {
+    margin-bottom: .5rem;
+  }
+
+  .menu.active {
+    height: auto;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .container {
+    & svg {
+      transform: scale(0.8);
+      margin-top: -1rem;
+      max-width: 100%;
+      transform-origin: left center;
+    }
+  }
 }
