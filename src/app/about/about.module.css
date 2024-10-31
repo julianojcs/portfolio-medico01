@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  gap: 1rem;
+  font-family: "Open Sans", sans-serif;
+
+  & .image {
+    display: inherit;
+    align-content: center;
+    justify-items: center;
+
+    & .photo {
+      object-fit: cover;
+      min-width: 150px;
+      width: 75%;
+      max-width: 365px;
+      height: auto;
+    }
+  }
+
+  & .curriculum {
+    display: grid;
+    word-break: break-word;
+    gap: 1rem;
+    font-size: .8rem;
+    text-align: justify;
+    margin-inline: auto;
+
+    & .intro {
+      display: inherit;
+      gap: .3rem;
+      color: var(--theme-color3-rgba);
+      font-size: 2rem;
+    }
+
+    & .docs {
+      display: inherit;
+      font-size: 1rem;
+      gap: .3rem;
+      color: var(--theme-color3-rgba);
+      & .specialty {
+        font-weight: bold;
+      }
+    }
+
+    & .description {
+      display: inherit;
+      gap: 1rem;
+      color: var(--theme-color1-rgba);
+      vertical-align: baseline;
+    }
+  }
+}
