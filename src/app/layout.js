@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <meta property='og:description' content='Site oficial da Dra. Luciana Costa Silva, Radiologista.' />
         <meta property='og:type' content='website' />
         <meta property='og:url' content={`${process.env.NEXT_PUBLIC_DOMAIN}`} />
-        <meta property='og:image' content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/join-blue-logo-1200x630.png`} />
+        <meta property='og:image' content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/og-image.png`} />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
 
