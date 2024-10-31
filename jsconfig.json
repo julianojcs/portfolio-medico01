@@ -18,8 +18,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/components": ["src/components"],
-      "@components/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/utils/*": ["src/utils/*"],
     }
   },
   "include": ["next-env.d.js", "**/*.js", "**/*.jsx"],
