@@ -21,8 +21,8 @@
     & .photo {
       object-fit: cover;
       min-width: 150px;
-      width: 75%;
-      max-width: 365px;
+      width: 90%;
+      max-width: 500px;
       height: auto;
       border-radius: 50%;
     }
