@@ -44,3 +44,78 @@ export const profile = {
     email: 'lucianacosta@me.com',
   },
 };
+
+export const clinicImages = [{
+    subtitle: 'Sala de ressonância magnética',
+  }, {
+    subtitle: 'Equipamento de raios X',
+  }, {
+    subtitle: 'Sala de tomografia computadorizada',
+  }, {
+    subtitle: 'Sala de mamografia',
+  }, {
+    subtitle: 'Sala de ultrassonografia',
+  }, {
+    subtitle: 'Sala de PET/CT',
+  }, {
+    subtitle: 'Sala de densitometria óssea',
+  }, {
+    subtitle: 'Sala de radiologia',
+  }, {
+    subtitle: 'Sala de medicina nuclear',
+  }, {
+    subtitle: 'Sala de hemodinâmica',
+  }, {
+    subtitle: 'Sala de radioterapia',
+  }, {
+    subtitle: 'Sala de radiologia intervencionista',
+  }, {
+    subtitle: 'Sala de radiologia pediátrica',
+  }, {
+    subtitle: 'Sala de radiologia musculoesquelética',
+  },
+]
+export const clinicImages2 = [{
+    picture: '/images/clinic/1.png',
+    subtitle: 'Sala de ressonância magnética',
+  }, {
+    picture: '/images/clinic/2.png',
+    subtitle: 'Equipamento de raios X',
+  }, {
+    picture: '/images/clinic/3.png',
+    subtitle: 'Sala de tomografia computadorizada',
+  }, {
+    picture: '/images/clinic/4.png',
+    subtitle: 'Sala de mamografia',
+  }, {
+    picture: '/images/clinic/5.png',
+    subtitle: 'Sala de ultrassonografia',
+  }, {
+    picture: '/images/clinic/6.png',
+    subtitle: 'Sala de PET/CT',
+  }, {
+    picture: '/images/clinic/7.png',
+    subtitle: 'Sala de densitometria óssea',
+  }, {
+    picture: '/images/clinic/8.png',
+    subtitle: 'Sala de radiologia',
+  }, {
+    picture: '/images/clinic/9.png',
+    subtitle: 'Sala de medicina nuclear',
+  }, {
+    picture: '/images/clinic/10.png',
+    subtitle: 'Sala de hemodinâmica',
+  }, {
+    picture: '/images/clinic/11.png',
+    subtitle: 'Sala de radioterapia',
+  }, {
+    picture: '/images/clinic/12.png',
+    subtitle: 'Sala de radiologia intervencionista',
+  }, {
+    picture: '/images/clinic/13.png',
+    subtitle: 'Sala de radiologia pediátrica',
+  }, {
+    picture: '/images/clinic/14.png',
+    subtitle: 'Sala de radiologia musculoesquelética',
+  },
+]

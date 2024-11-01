@@ -23,7 +23,7 @@
   --theme-color6-rgba: rgba(216, 43, 4, 1);
 
   --font-size-title: clamp(2rem, 5vw + .5rem, 3rem);
-  --font-size-p: clamp(1rem, 5vw + .5rem, 1.5rem);
+  --font-size-p: clamp(1rem, .5vw + .3rem, 1.5rem);
   --logo-bg-color: rgb(40, 60, 99);
 }
 

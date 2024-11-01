@@ -1,10 +1,17 @@
-import { Poppins } from 'next/font/google'
+import { Poppins, Charm } from 'next/font/google'
 import "./globals.css";
 import { Header, Footer } from '@/components';
 
 const poppins = Poppins({
   weight: ['100', '300', '400', '500', '600', '700', '800', '900'],
   style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const charm = Charm({
+  weight: ['400', '700'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
 })
@@ -44,7 +51,7 @@ export default function RootLayout({ children }) {
         {/* Link canônico */}
         <link rel='canonical' href={process.env.NEXT_PUBLIC_DOMAIN}></link>
       </head>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} ${charm.className}`}>
         <Header />
         <main className="main">
           {children}

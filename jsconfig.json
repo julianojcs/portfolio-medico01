@@ -20,6 +20,7 @@
       "@/components": ["src/components"],
       "@/assets/*": ["src/assets/*"],
       "@/utils/*": ["src/utils/*"],
+      "@/public/*": ["public/*"],
     }
   },
   "include": ["next-env.d.js", "**/*.js", "**/*.jsx"],

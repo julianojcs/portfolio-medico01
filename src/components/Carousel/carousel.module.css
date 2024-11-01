@@ -1,0 +1,97 @@
+/* carousel.module.css */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imageContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imageWrapper {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  display: none;
+  position: relative;
+  width: 100%;
+  max-width: 552px;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.imageWrapper.active {
+  opacity: 1;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 1rem;
+  height: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: max-content;
+}
+
+.arrow {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  scale: 1.5;
+}
+
+.arrow:hover {
+  color: var(--theme-color3-hex);
+}
+
+.arrow:first-of-type {
+  left: 20px;
+}
+
+.arrow:last-of-type {
+  right: 20px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 5px;
+  margin-block: auto;
+  height: 10px;
+  align-items: center;
+}
+
+.indicator {
+  width: 7px;
+  height: 7px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.8);
+  transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+
+.activeIndicator {
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.8);
+}

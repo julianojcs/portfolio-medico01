@@ -1,0 +1,52 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: Charm, "Open Sans", sans-serif;
+  color: var(--theme-color3-rgba);
+  font-size: var(--font-size-title);
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 2rem;
+
+  & .images {
+    display: inherit;
+    align-content: center;
+    justify-items: center;
+
+    & .photo {
+      object-fit: cover;
+      min-width: 150px;
+      width: 75%;
+      max-width: 365px;
+      height: auto;
+    }
+  }
+
+  & .info {
+    display: grid;
+    word-break: break-word;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-inline: auto;
+
+    & p {
+      margin-block: 0;
+      text-align: justify;
+      text-indent: 2rem; /* Adiciona um recuo de 2rem na primeira linha de cada parágrafo */
+      line-height: 20px;
+
+      &::first-letter {
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Charm, "Open Sans", sans-serif;
+        color: var(--theme-color3-rgba);
+      }
+    }
+  }
+}

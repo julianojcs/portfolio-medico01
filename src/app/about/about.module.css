@@ -1,7 +1,16 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: Charm, "Open Sans", sans-serif;
+  color: var(--theme-color3-rgba);
+  font-size: var(--font-size-title);
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-gap: 1rem;
   font-family: "Open Sans", sans-serif;
 
   & .image {
@@ -22,21 +31,24 @@
     display: grid;
     word-break: break-word;
     gap: 1rem;
-    font-size: .8rem;
     margin-inline: auto;
 
     & .intro {
       display: inherit;
       gap: .3rem;
       color: var(--theme-color3-rgba);
-      font-size: 2rem;
+      font-family: Charm, Poppins, "Open Sans", sans-serif;
+      font-size: 3em;
+      line-height: 40px;
+      margin-top: 2rem;
     }
 
     & .docs {
       display: inherit;
-      font-size: 1rem;
+      font-size: 1em;
       gap: .3rem;
       color: var(--theme-color3-rgba);
+
       & .specialty {
         font-weight: bold;
       }
@@ -44,17 +56,53 @@
     & .content {
       text-align: justify;
       vertical-align: baseline;
+      text-indent: 2rem; /* Adiciona um recuo de 2rem na primeira linha de cada parágrafo */
       color: var(--theme-color1-rgba);
       display: inherit;
       gap: 1rem;
+      margin-top: 2rem;
+      font-size: var(--font-size-p);
 
       & .description {
         gap: 1rem;
         display: inherit;
+
+        & p {
+          margin-block: 0;
+          text-align: justify;
+          text-indent: 2rem; /* Adiciona um recuo de 2rem na primeira linha de cada parágrafo */
+          line-height: 20px;
+
+          &::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: Charm, "Open Sans", sans-serif;
+            color: var(--theme-color3-rgba);
+          }
+        }
       }
 
-      & .fellow {
-        margin-left: 2rem;
+      & .fellows {
+        margin-top: 2rem;
+      }
+
+      & ul {
+        position: relative;
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin-left: -8px;
+
+        & li::before {
+          position: absolute;
+          left: 0;
+          content: "•";
+          color: var(--theme-color3-rgba);
+          font-weight: bold;
+          display: inline-block;
+          width: 4em;
+          margin-left: -1.3em;
+          scale: 2;
+        }
       }
     }
   }
