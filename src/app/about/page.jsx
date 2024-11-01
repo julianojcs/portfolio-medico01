@@ -13,6 +13,7 @@ const About = () => {
           alt={`${profile.prefix} ${profile.name}`}
           width={365}
           height={365}
+          priority
           // sizes="(max-width: 365px) 150px, (max-width: 1200px) 20vw, 365px"
         />
       </div>
