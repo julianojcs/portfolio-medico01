@@ -23,7 +23,7 @@ export const menuItems = [
 
 export const profile = {
   prefix: 'Dra.',
-  name: 'Luciana Costa Silva',
+  name: 'Julia Schulsman',
   degrees: ['MD', 'MSc', 'PhD'],
   crm: '28151',
   crmState: 'MG',
@@ -76,46 +76,46 @@ export const clinicImages = [{
   },
 ]
 export const clinicImages2 = [{
-    picture: '/images/clinic/1.png',
+    picture: '/images/clinic/1.jpg',
     subtitle: 'Sala de ressonância magnética',
   }, {
-    picture: '/images/clinic/2.png',
+    picture: '/images/clinic/2.jpg',
     subtitle: 'Equipamento de raios X',
   }, {
-    picture: '/images/clinic/3.png',
+    picture: '/images/clinic/3.jpg',
     subtitle: 'Sala de tomografia computadorizada',
   }, {
-    picture: '/images/clinic/4.png',
+    picture: '/images/clinic/4.jpg',
     subtitle: 'Sala de mamografia',
   }, {
-    picture: '/images/clinic/5.png',
+    picture: '/images/clinic/5.jpg',
     subtitle: 'Sala de ultrassonografia',
   }, {
-    picture: '/images/clinic/6.png',
+    picture: '/images/clinic/6.jpg',
     subtitle: 'Sala de PET/CT',
   }, {
-    picture: '/images/clinic/7.png',
+    picture: '/images/clinic/7.jpg',
     subtitle: 'Sala de densitometria óssea',
   }, {
-    picture: '/images/clinic/8.png',
+    picture: '/images/clinic/8.jpg',
     subtitle: 'Sala de radiologia',
   }, {
-    picture: '/images/clinic/9.png',
+    picture: '/images/clinic/9.jpg',
     subtitle: 'Sala de medicina nuclear',
   }, {
-    picture: '/images/clinic/10.png',
+    picture: '/images/clinic/10.jpg',
     subtitle: 'Sala de hemodinâmica',
   }, {
-    picture: '/images/clinic/11.png',
+    picture: '/images/clinic/11.jpg',
     subtitle: 'Sala de radioterapia',
   }, {
-    picture: '/images/clinic/12.png',
+    picture: '/images/clinic/12.jpg',
     subtitle: 'Sala de radiologia intervencionista',
   }, {
-    picture: '/images/clinic/13.png',
+    picture: '/images/clinic/13.jpg',
     subtitle: 'Sala de radiologia pediátrica',
   }, {
-    picture: '/images/clinic/14.png',
+    picture: '/images/clinic/14.jpg',
     subtitle: 'Sala de radiologia musculoesquelética',
   },
 ]

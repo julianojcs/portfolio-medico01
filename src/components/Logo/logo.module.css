@@ -1,8 +1,9 @@
 .logo {
   display: flex;
-  margin-bottom: -12px;
+  margin-bottom: -55px;
+  margin-left: -80px;
   cursor: pointer;
-  color: var(--theme-color1-rgba);
+  color: var(--theme-color0-rgba);
 
   &:hover {
     color: var(--theme-color2-rgba);

@@ -9,7 +9,7 @@
   align-items: center;
   gap: 1rem;
   padding-inline: 1rem;
-  background-color: var(--theme-color4-hex);
+  background-color: var(--theme-color4-rgba);
   box-shadow: 0 2px 5px rgba(50, 50, 93, 0.25), 0 1px 3px rgba(0, 0, 0, 0.3);
   /* scroll-snap-type: y mandatory; */
 }
@@ -21,8 +21,8 @@
   align-items: center;
   gap: 1rem;
   margin-left: auto;
-  color: var(--theme-color1-rgba);
-  font-size: 1.7em;
+  color: var(--theme-color0-rgba);
+  font-size: var(--font-size-h);
 }
 
 .hamburger {
@@ -35,7 +35,7 @@
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: var(--theme-color1-hex);
+  background-color: var(--theme-color1-rgba);
   margin: 4px 0;
 }
 
@@ -51,7 +51,7 @@
     overflow: hidden;
     height: 0;
     transition: height 0.3s ease;
-    background-color: var(--theme-color3-hex);
+    background-color: var(--theme-color3-rgba);
   }
 
   .container {

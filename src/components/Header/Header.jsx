@@ -29,9 +29,9 @@ export const Header = () => {
   return (
     <header className={styles.container}>
       <Logo
-        width={198}
-        height={74}
-        caption={true}
+        width={300}
+        height={111}
+        caption={false}
         subtitle={false}
       />
       <nav ref={menuRef} className={`${styles.menu} ${menuOpen ? styles.active : ''}`}>

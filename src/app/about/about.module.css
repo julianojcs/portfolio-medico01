@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: center;
-  font-family: Charm, "Open Sans", sans-serif;
+  font-family: Roboto, "Open Sans", sans-serif;
   color: var(--theme-color3-rgba);
   font-size: var(--font-size-title);
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
@@ -24,6 +24,7 @@
       width: 75%;
       max-width: 365px;
       height: auto;
+      border-radius: 50%;
     }
   }
 
@@ -37,10 +38,13 @@
       display: inherit;
       gap: .3rem;
       color: var(--theme-color3-rgba);
-      font-family: Charm, Poppins, "Open Sans", sans-serif;
-      font-size: 3em;
-      line-height: 40px;
+      font-family: Roboto, Poppins, "Open Sans", sans-serif;
+      font-size: var(--font-size-title);
+      /* line-height: 40px; */
       margin-top: 2rem;
+      & .degrees {
+        font-size: var(--font-size-h);
+      }
     }
 
     & .docs {
@@ -76,7 +80,7 @@
           &::first-letter {
             font-size: 2em;
             font-weight: bold;
-            font-family: Charm, "Open Sans", sans-serif;
+            font-family: Roboto, "Open Sans", sans-serif;
             color: var(--theme-color3-rgba);
           }
         }

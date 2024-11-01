@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './about.module.css'
-import photo from '@/assets/images/medico.png';
+// import photo1 from '@/assets/images/medico1.png';
+import photo2 from '@/assets/images/medico2.png';
 import { profile } from "@/utils/constants";
 
 const About = () => {
@@ -11,10 +12,10 @@ const About = () => {
         <div className={styles.image}>
           <Image
             className={styles.photo}
-            src={photo}
+            src={photo2}
             alt={`${profile.prefix} ${profile.name}`}
-            width={365}
-            height={365}
+            width={500}
+            height={500}
             priority
             // sizes="(max-width: 365px) 150px, (max-width: 1200px) 20vw, 365px"
           />

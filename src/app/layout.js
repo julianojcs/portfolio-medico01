@@ -1,4 +1,4 @@
-import { Poppins, Charm } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import "./globals.css";
 import { Header, Footer } from '@/components';
 
@@ -9,18 +9,11 @@ const poppins = Poppins({
   display: 'swap',
 })
 
-const charm = Charm({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-})
-
 export const metadata = {
-  title: "Dra. Luciana Costa",
+  title: "Dra. Julia Schulsman",
   author: "Join Digital Solutions",
   description: "Developed By Join Digital Solutions",
-  keywords: "Médico, Dra. Luciana Costa, Join Digital Solutions, Juliano Costa Silva, Medicina, Radiologia, Consulta, Agendamento",
+  keywords: "Médico, Dra. Julia Schulsman, Join Digital Solutions, Juliano Costa Silva, Medicina, Radiologia, Consulta, Agendamento",
   charSet: "UTF-8",
   robots: "index, follow",
 };
@@ -34,8 +27,8 @@ export default function RootLayout({ children }) {
         <meta charSet='utf-8' />
 
         {/* Open Graph para redes sociais */}
-        <meta property='og:title' content='Dra Luciana Costa Silva' />
-        <meta property='og:description' content='Site oficial da Dra. Luciana Costa Silva, Radiologista.' />
+        <meta property='og:title' content='Dra Julia Schulsman' />
+        <meta property='og:description' content='Site oficial da Dra. Julia Schulsman, Radiologista.' />
         <meta property='og:type' content='website' />
         <meta property='og:url' content={`${process.env.NEXT_PUBLIC_DOMAIN}`} />
         <meta property='og:image' content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/og-image.png`} />
@@ -44,14 +37,14 @@ export default function RootLayout({ children }) {
 
         {/* Twitter Cards */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Dra Luciana Costa Silva' />
-        <meta name='twitter:description' content='Site oficial da Dra. Luciana Costa Silva, Radiologista.' />
+        <meta name='twitter:title' content='Dra Julia Schulsman' />
+        <meta name='twitter:description' content='Site oficial da Dra. Julia Schulsman, Radiologista.' />
         <meta name='twitter:image' content={`${process.env.NEXT_PUBLIC_DOMAIN}/images/join-blue-logo-1200x630.png`} />
 
         {/* Link canônico */}
         <link rel='canonical' href={process.env.NEXT_PUBLIC_DOMAIN}></link>
       </head>
-      <body className={`${poppins.className} ${charm.className}`}>
+      <body className={`${poppins.className}`}>
         <Header />
         <main className="main">
           {children}

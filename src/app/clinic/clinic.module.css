@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: center;
-  font-family: Charm, "Open Sans", sans-serif;
+  font-family: Roboto, "Open Sans", sans-serif;
   color: var(--theme-color3-rgba);
   font-size: var(--font-size-title);
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
@@ -44,7 +44,7 @@
       &::first-letter {
         font-size: 2em;
         font-weight: bold;
-        font-family: Charm, "Open Sans", sans-serif;
+        font-family: Roboto, "Open Sans", sans-serif;
         color: var(--theme-color3-rgba);
       }
     }

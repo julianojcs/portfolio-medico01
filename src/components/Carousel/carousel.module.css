@@ -58,7 +58,7 @@
 }
 
 .arrow:hover {
-  color: var(--theme-color3-hex);
+  color: var(--theme-color3-rgba);
 }
 
 .arrow:first-of-type {
