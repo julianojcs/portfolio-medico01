@@ -1,3 +1,4 @@
+/* header.module.css */
 .container {
   position: sticky;
   display: flex;
@@ -17,7 +18,6 @@
   display: flex;
   flex-direction: row;
   height: 50px;
-  flex-direction: row;
   align-items: center;
   gap: 1rem;
   margin-left: auto;
