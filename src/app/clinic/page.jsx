@@ -3,7 +3,6 @@ import { clinicImages } from "@/utils/constants";
 import Carousel from "../../components/Carousel/Carousel";
 
 const Clinic = () => {
-  console.log(clinicImages);
   return (
     <>
     <h1 className={`${styles.title}`}>Clínica Schulsman's</h1>

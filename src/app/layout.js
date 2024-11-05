@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import "./globals.css";
 import { Header, Footer } from '@/components';
+import Head from 'next/head';
 
 const poppins = Poppins({
   weight: ['100', '300', '400', '500', '600', '700', '800', '900'],
@@ -23,7 +24,7 @@ export const favicon = "/favicon.ico";
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <head>
+      <Head>
         <meta charSet='utf-8' />
 
         {/* Open Graph para redes sociais */}
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
 
         {/* Link canônico */}
         <link rel='canonical' href={process.env.NEXT_PUBLIC_DOMAIN}></link>
-      </head>
+      </Head>
       <body className={`${poppins.className}`}>
         <Header />
         <main className="main">

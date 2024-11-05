@@ -45,7 +45,7 @@ export const profile = {
   },
 };
 
-export const clinicImages = [{
+export const clinicImages1 = [{
     subtitle: 'Sala de ressonância magnética',
   }, {
     subtitle: 'Equipamento de raios X',
@@ -75,47 +75,47 @@ export const clinicImages = [{
     subtitle: 'Sala de radiologia musculoesquelética',
   },
 ]
-export const clinicImages2 = [{
-    picture: '/images/clinic/1.jpg',
+export const clinicImages = [{
+    picture: '/images/clinic/1',
     subtitle: 'Sala de ressonância magnética',
   }, {
-    picture: '/images/clinic/2.jpg',
+    picture: '/images/clinic/2',
     subtitle: 'Equipamento de raios X',
   }, {
-    picture: '/images/clinic/3.jpg',
+    picture: '/images/clinic/3',
     subtitle: 'Sala de tomografia computadorizada',
   }, {
-    picture: '/images/clinic/4.jpg',
+    picture: '/images/clinic/4',
     subtitle: 'Sala de mamografia',
   }, {
-    picture: '/images/clinic/5.jpg',
+    picture: '/images/clinic/5',
     subtitle: 'Sala de ultrassonografia',
   }, {
-    picture: '/images/clinic/6.jpg',
+    picture: '/images/clinic/6',
     subtitle: 'Sala de PET/CT',
   }, {
-    picture: '/images/clinic/7.jpg',
+    picture: '/images/clinic/7',
     subtitle: 'Sala de densitometria óssea',
   }, {
-    picture: '/images/clinic/8.jpg',
+    picture: '/images/clinic/8',
     subtitle: 'Sala de radiologia',
   }, {
-    picture: '/images/clinic/9.jpg',
+    picture: '/images/clinic/9',
     subtitle: 'Sala de medicina nuclear',
   }, {
-    picture: '/images/clinic/10.jpg',
+    picture: '/images/clinic/10',
     subtitle: 'Sala de hemodinâmica',
   }, {
-    picture: '/images/clinic/11.jpg',
+    picture: '/images/clinic/11',
     subtitle: 'Sala de radioterapia',
   }, {
-    picture: '/images/clinic/12.jpg',
+    picture: '/images/clinic/12',
     subtitle: 'Sala de radiologia intervencionista',
   }, {
-    picture: '/images/clinic/13.jpg',
+    picture: '/images/clinic/13',
     subtitle: 'Sala de radiologia pediátrica',
   }, {
-    picture: '/images/clinic/14.jpg',
+    picture: '/images/clinic/14',
     subtitle: 'Sala de radiologia musculoesquelética',
   },
 ]
