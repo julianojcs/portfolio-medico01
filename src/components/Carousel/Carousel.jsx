@@ -1,5 +1,6 @@
 /* /components/Carousel.jsx */
 'use client'
+import { track } from '@vercel/analytics';
 import { useState } from 'react';
 import Image from 'next/image';
 import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa';
@@ -10,10 +11,12 @@ const Carousel = ({ img }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
+    track('Prev Click');
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? clinicImages.length - 1 : prevIndex - 1));
   };
 
   const handleNextClick = () => {
+    track('Next Click');
     setCurrentIndex((prevIndex) => (prevIndex === clinicImages.length - 1 ? 0 : prevIndex + 1));
   };
 
