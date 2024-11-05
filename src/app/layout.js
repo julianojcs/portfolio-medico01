@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { Poppins } from 'next/font/google'
 import "./globals.css";
 import { Header, Footer } from '@/components';
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="main">
           {children}
+          <Analytics />
         </main>
         <Footer />
       </body>
