@@ -4,10 +4,12 @@ import { useState, useEffect, useRef } from 'react';
 import styles from './header.module.css'
 import { Logo } from '@/components';
 import { Menu } from '@/components/Menu';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -35,7 +37,9 @@ export const Header = () => {
         subtitle={false}
       />
       <nav ref={menuRef} className={`${styles.menu} ${menuOpen ? styles.active : ''}`}>
-        <Menu />
+        <Menu
+          pathname={pathname}
+        />
       </nav>
       <div className={styles.hamburger} onClick={toggleMenu}>
         <div></div>
