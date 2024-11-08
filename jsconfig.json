@@ -19,6 +19,7 @@
       "@/*": ["./src/*"],
       "@/components": ["src/components"],
       "@/assets/*": ["src/assets/*"],
+      "@/db/*": ["src/db/*"],
       "@/utils/*": ["src/utils/*"],
       "@/public/*": ["public/*"],
     }
