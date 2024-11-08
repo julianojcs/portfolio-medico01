@@ -14,8 +14,8 @@ jobs:
         node-version: [20.18.0]
 
     env:
-      NEXT_PUBLIC_DOMAIN: ${{secrets.NEXT_PUBLIC_DOMAIN}}
-      NEXT_PUBLIC_API_DOMAIN: ${{secrets.NEXT_PUBLIC_API_DOMAIN}}
+      NEXT_PUBLIC_DOMAIN: ${{ secrets.NEXT_PUBLIC_DOMAIN }}
+      NEXT_PUBLIC_API_DOMAIN: ${{ secrets.NEXT_PUBLIC_API_DOMAIN }}
 
     steps:
     - uses: actions/checkout@v4
